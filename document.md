@@ -21,7 +21,7 @@ function reverseString(str){
 }
 console.log(reverseString(a))
 ```
-2.1.write a function to check the given string is palindrome? Solution One
+2.write a function to check the given string is palindrome? Solution One
 ```
 let a=prompt("Enter a string ");
 function checkString(str){
@@ -51,4 +51,18 @@ function checkString(str){
 }
 console.log(checkString(a))
 ```
-
+3.write a function to return longest word in the given string ? Solution One
+```
+let a="hello, how are doing this javascript problem"
+function longestWord(str){
+    let words=str.split(" ")
+    let longWord=""
+    for(let word of words){
+        if(word.length>longWord.length){
+            longWord=word
+        }
+    }
+    return longWord;
+}
+console.log(longestWord(a))
+```
